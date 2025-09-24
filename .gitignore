@@ -1,0 +1,84 @@
+# ======================================
+# Backend Node.js
+# ======================================
+
+# Node modules
+/backend/node_modules/
+
+# Logs
+/backend/logs/
+/backend/*.log
+/backend/*.log.*
+/backend/pids/
+/backend/*.pid
+/backend/*.seed
+/backend/*.pid.lock
+
+# Build / transpile
+/backend/dist/
+/backend/build/
+/backend/out/
+/backend/.cache/
+/backend/*.tsbuildinfo
+
+# Environment variables
+/backend/.env
+/backend/.env.local
+/backend/.env.*.local
+
+# ======================================
+# Frontend / Web
+# ======================================
+
+# Build output
+/frontend/dist/
+/frontend/build/
+/frontend/out/
+/frontend/.cache/
+
+# Assets temporaires et uploads
+/frontend/uploads/
+/frontend/*.mp4
+/frontend/*.mov
+/frontend/*.avi
+/frontend/*.png
+/frontend/*.jpg
+/frontend/*.jpeg
+/frontend/*.gif
+/frontend/*.svg
+/frontend/*.ico
+
+# Temporary files
+/frontend/*.tmp
+/frontend/*.bak
+/frontend/*.swp
+
+# ======================================
+# IDE / Editor
+# ======================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======================================
+# OS Files
+# ======================================
+.DS_Store
+Thumbs.db
+
+# ======================================
+# Miscellaneous
+# ======================================
+*.log
+*.seed
+*.pid
+
+.history/
+# macOS temporary files
+~*
+*.DS_Store
+
+.env
+node_modules/
+certificates/

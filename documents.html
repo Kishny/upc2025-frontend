@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Documents officiels — UPC 2025</title>
+    <meta
+      name="description"
+      content="Appel à l’Union, Engagement du candidat consensuel, Engagement des membres, autres communiqués officiels — FR & EN."
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <meta property="og:title" content="Documents officiels — UPC 2025" />
+    <meta
+      property="og:description"
+      content="Téléchargez les documents officiels de l’UPC 2025 en français et en anglais."
+    />
+    <meta name="theme-color" content="#007A5E" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container">
+        <span class="topbar__msg" data-i18n="topbar_msg"
+          >Élection présidentielle — Octobre 2025</span
+        >
+        <div class="topbar__actions">
+          <button
+            id="langToggle"
+            class="btn btn--ghost"
+            aria-label="Toggle language"
+          >
+            FR / EN
+          </button>
+          <a class="btn btn--ghost" href="contact.html" data-i18n="contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" alt="UPC 2025" class="brand__logo" />
+          <span class="brand__title">UPC 2025</span>
+        </a>
+        <nav id="nav" class="nav" aria-label="Navigation principale">
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="candidat.html" data-i18n="nav_candidate"
+            >Candidat consensuel</a
+          >
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="adherer.html" class="nav__cta" data-i18n="nav_join"
+            >Adhérer</a
+          >
+          <a href="documents.html" class="active" data-i18n="nav_docs"
+            >Documents officiels</a
+          >
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne populaire</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+        </nav>
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- En-tête page -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="docs_page_title">Documents officiels</h1>
+        <p class="page-hero__lead" data-i18n="docs_page_lead">
+          Téléchargez les documents clés en français et en anglais.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="section">
+      <div class="container">
+        <div class="doc-filters">
+          <div class="doc-filters__btns">
+            <button
+              class="btn btn--outline docfilter active"
+              data-filter="all"
+              data-i18n="filter_all"
+            >
+              Tous
+            </button>
+            <button
+              class="btn btn--outline docfilter"
+              data-filter="fr"
+              data-i18n="filter_fr"
+            >
+              Français
+            </button>
+            <button
+              class="btn btn--outline docfilter"
+              data-filter="en"
+              data-i18n="filter_en"
+            >
+              English
+            </button>
+          </div>
+          <input
+            id="docSearch"
+            type="search"
+            class="doc-filters__search"
+            placeholder="Rechercher…"
+            aria-label="Rechercher"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Liste des documents -->
+    <!-- Programmes Coalition -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 data-i18n="docs_groups_title">Corpus officiel</h2>
+
+        <div class="cards" id="docList">
+          <!-- Nouveau document : Programme Commun UPC 2025 -->
+          <article
+            class="card doc doc--program"
+            data-lang="fr"
+            data-title="Programme Commun UPC 2025"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Document icon (feuille) -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <path d="M8 9h8M8 13h8M8 17h5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Programme Commun UPC 2025</h3>
+              <p class="doc__meta">FR • PDF (2 parties)</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/Programme_Commun_UPC2025_partie_1.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >Voir Partie 1</a
+                >
+                <a
+                  href="docs/Programme_Commun_UPC2025_partie_2.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >Voir Partie 2</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- Appel à l’Union -->
+          <article
+            class="card doc doc--appeal"
+            data-lang="fr"
+            data-title="Appel à l’Union"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Megaphone -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 12v-2a2 2 0 0 1 2-2h2l10-4v16l-10-4H5a2 2 0 0 1-2-2v-2z"
+                />
+                <path d="M11 19l-1.5 2.8A2 2 0 0 1 6.7 21L5 18" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Appel à l’Union</h3>
+              <p class="doc__meta">FR • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/appel_a_l'union2025.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Télécharger</a
+                >
+                <a
+                  href="docs/appel_a_l'union2025.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >Voir</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Appeal to the People -->
+          <article
+            class="card doc doc--appeal"
+            data-lang="en"
+            data-title="Appeal to the People"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Megaphone -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 12v-2a2 2 0 0 1 2-2h2l10-4v16l-10-4H5a2 2 0 0 1-2-2v-2z"
+                />
+                <path d="M11 19l-1.5 2.8A2 2 0 0 1 6.7 21L5 18" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Appeal to the People</h3>
+              <p class="doc__meta">EN • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/UPC 2025 Appeal to the People.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Download</a
+                >
+                <a
+                  href="docs/UPC 2025 Appeal to the People.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >View</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Engagement du Candidat -->
+          <article
+            class="card doc doc--oath"
+            data-lang="fr"
+            data-title="Engagement du Candidat"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Raised hand / oath -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 2v8" />
+                <path d="M11 2v8" />
+                <path d="M15 4v6" />
+                <path d="M19 6v4" />
+                <path d="M4 13v5a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Engagement du Candidat consensuel</h3>
+              <p class="doc__meta">FR • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/Engagement du Candidat Consensuel.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Télécharger</a
+                >
+                <a
+                  href="docs/Engagement du Candidat Consensuel.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >Voir</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Oath of the Consensual Candidate -->
+          <article
+            class="card doc doc--oath"
+            data-lang="en"
+            data-title="Candidate Oath"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Raised hand / oath -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 2v8" />
+                <path d="M11 2v8" />
+                <path d="M15 4v6" />
+                <path d="M19 6v4" />
+                <path d="M4 13v5a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Oath of the Consensual Candidate</h3>
+              <p class="doc__meta">EN • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/UPC 2025 Oath of the Consensual Candidate.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Download</a
+                >
+                <a
+                  href="docs/UPC 2025 Oath of the Consensual Candidate.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >View</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Formulaire d’engagement des membres -->
+          <article
+            class="card doc doc--form"
+            data-lang="fr"
+            data-title="Engagement des membres"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Clipboard -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <path d="M9 4V3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1" />
+                <path d="M8 9h8M8 13h8M8 17h5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Formulaire d’engagement des membres</h3>
+              <p class="doc__meta">FR • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/Engagement des membres de l'UPC 2025.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Télécharger</a
+                >
+                <a
+                  href="docs/Engagement des membres de l'UPC 2025.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >Voir</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Member Undertaking -->
+          <article
+            class="card doc doc--form"
+            data-lang="en"
+            data-title="Member Undertaking"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Clipboard -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <path d="M9 4V3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1" />
+                <path d="M8 9h8M8 13h8M8 17h5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>UPC 2025 Member Undertaking</h3>
+              <p class="doc__meta">EN • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/UPC 2025 Member undertaking.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--primary"
+                  data-i18n="btn_download"
+                  >Download</a
+                >
+                <a
+                  href="docs/UPC 2025 Member undertaking.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--outline"
+                  data-i18n="btn_view"
+                  >View</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Communiqués officiels -->
+          <article
+            class="card doc doc--news"
+            data-lang="fr"
+            data-title="Communiqués officiels"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Newspaper -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19a2 2 0 0 1-2-2V6h16v11a2 2 0 0 1-2 2H4z" />
+                <path d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2" />
+                <path d="M6 10h6M6 14h10M6 18h10" />
+                <rect x="6" y="6" width="6" height="3" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Communiqués officiels</h3>
+              <p class="doc__meta">FR • DOCX/PDF</p>
+              <div class="hero__cta">
+                <a href="docs/Appel UPC 2025 V2.docx" class="btn btn--outline"
+                  >DOCX</a
+                >
+                <a
+                  href="docs/Presentation UPC 2025.docx"
+                  class="btn btn--outline"
+                  >Présentation</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Official releases (EN) -->
+          <article
+            class="card doc doc--news"
+            data-lang="en"
+            data-title="Official releases"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Newspaper -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19a2 2 0 0 1-2-2V6h16v11a2 2 0 0 1-2 2H4z" />
+                <path d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2" />
+                <path d="M6 10h6M6 14h10M6 18h10" />
+                <rect x="6" y="6" width="6" height="3" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Official releases</h3>
+              <p class="doc__meta">EN • DOCX</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/Presentation UPC 2025 English.docx"
+                  class="btn btn--outline"
+                  >Presentation</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Fiche papier d'adhésion -->
+          <article
+            class="card doc doc--paper"
+            data-lang="fr"
+            data-title="Fiche Papier d'Adhésion"
+          >
+            <div class="doc__icon" aria-hidden="true">
+              <!-- Clipboard / Paper icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <path d="M9 4V3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1" />
+                <path d="M8 9h8M8 13h8M8 17h5" />
+              </svg>
+            </div>
+            <div class="doc__body">
+              <h3>Fiche d'Adhésion</h3>
+              <p class="doc__meta">FR • PDF</p>
+              <div class="hero__cta">
+                <a
+                  href="docs/Fiche_adhesion_upc2025.pdf"
+                  target="_blank"
+                  class="btn btn--primary"
+                  >Télécharger</a
+                >
+                <a
+                  href="docs/Fiche_adhesion_upc2025.pdf"
+                  target="_blank"
+                  class="btn btn--outline"
+                  >Voir</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="section">
+      <div class="container hero__cta">
+        <a href="index.html" class="btn btn--outline" data-i18n="back_home">
+          ← Retour à l’accueil
+        </a>
+        <a
+          href="campagne-populaire.html"
+          class="btn btn--primary"
+          data-i18n="goto_campaign"
+        >
+          Campagne Populaire →
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--clean">
+      <div class="container footer__wrap">
+        <img src="assets/img/logo.png" alt="UPC 2025" class="footer__logo" />
+
+        <div class="footer__titleline">
+          <span class="footer__line"></span>
+          <h3 class="footer__title" data-i18n="footer_join">REJOIGNEZ-NOUS</h3>
+          <span class="footer__line"></span>
+        </div>
+
+        <ul class="footer__socials">
+          <li>
+            <a class="sbtn" href="#" aria-label="Facebook" title="Facebook"
+              ><span aria-hidden="true">f</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="X / Twitter" title="X"
+              ><span aria-hidden="true">X</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="Instagram" title="Instagram"
+              ><span aria-hidden="true">◎</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="YouTube" title="YouTube"
+              ><span aria-hidden="true">▶</span></a
+            >
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="documents-officiels.html" data-i18n="nav_docs">Documents</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+
+        <small class="footer__copy">
+          © <span id="year"></span> UPC 2025 —
+          <span data-i18n="rights">Tous droits réservés.</span>
+        </small>
+      </div>
+    </footer>
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
+  </body>
+</html>

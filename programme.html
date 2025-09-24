@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Programme — UPC 2025</title>
+    <meta
+      name="description"
+      content="Programme Commun de Transition et de Refondation : Paix, Réformes politiques, Croissance économique, Développement humain, Rayonnement international."
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <meta property="og:title" content="Programme — UPC 2025" />
+    <meta
+      property="og:description"
+      content="Les cinq axes stratégiques du Programme Commun."
+    />
+    <meta property="og:image" content="assets/img/hero-1.jpg" />
+    <meta name="theme-color" content="#007A5E" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container">
+        <span class="topbar__msg" data-i18n="topbar_msg"
+          >Élection présidentielle — Octobre 2025</span
+        >
+        <div class="topbar__actions">
+          <button
+            id="langToggle"
+            class="btn btn--ghost"
+            aria-label="Toggle language"
+          >
+            FR / EN
+          </button>
+          <a class="btn btn--ghost" href="contact.html" data-i18n="contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" alt="UPC 2025" class="brand__logo" />
+          <span class="brand__title">UPC 2025</span>
+        </a>
+        <nav id="nav" class="nav" aria-label="Navigation principale">
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="candidat.html" data-i18n="nav_candidate"
+            >Candidat consensuel</a
+          >
+          <a href="programme.html" class="active" data-i18n="nav_program"
+            >Programme</a
+          >
+          <a href="adherer.html" class="nav__cta" data-i18n="nav_join"
+            >Adhérer</a
+          >
+          <a href="documents.html" data-i18n="nav_docs">Documents officiels</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne populaire</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+        </nav>
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- En-tête de page -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="prog_title">Programme Commun</h1>
+        <p class="page-hero__lead" data-i18n="prog_lead">
+          Les cinq axes stratégiques pour la Transition et la Refondation.
+        </p>
+        <div class="hero__cta">
+          <!-- Remplace le chemin par le vrai PDF si besoin -->
+          <a
+            href="documents.html"
+            class="btn btn--primary"
+            rel="noopener"
+            data-i18n="prog_download"
+          >
+            Voir le programme de coalition (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro + rappel téléchargements -->
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card gradient-cm">
+          <h2 data-i18n="prog_intro_title">Une feuille de route claire</h2>
+          <p data-i18n="prog_intro_text">
+            Le Programme Commun définit les priorités immédiates pour sécuriser
+            la paix, refonder l’État et relancer l’économie, tout en
+            investissant dans l’humain et le rayonnement du Cameroun.
+          </p>
+          <ul class="checklist">
+            <li data-i18n="prog_intro_pt1">
+              Actions de transition réalistes et mesurables
+            </li>
+            <li data-i18n="prog_intro_pt2">
+              Gouvernance éthique et transparente
+            </li>
+            <li data-i18n="prog_intro_pt3">
+              Approche participative et inclusive
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-i18n="prog_dl_title">Documents liés</h3>
+          <p data-i18n="prog_dl_text">
+            Consultez aussi les autres documents officiels.
+          </p>
+          <div class="hero__cta">
+            <a
+              href="documents.html"
+              class="btn btn--outline"
+              data-i18n="prog_dl_btn"
+              >Tous les documents</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Les 6 axes -->
+    <div class="axes-grid">
+      <!-- Tuile 1 -->
+      <article class="tile tile--sky">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Bloc-notes (audit) -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm2 3h6v2H9V5zm0 4h6v2H9V9zm0 4h6v2H9v-2z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_audit_title">Audit de l’État camerounais</h3>
+        <p data-i18n="axis_audit_text">
+          Évaluer institutions, finances, infrastructures et fonctionnement pour
+          bâtir des réformes solides.
+        </p>
+      </article>
+
+      <!-- Tuile 2 -->
+      <article class="tile tile--amber">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Colombe -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M22 9c-3 0-5-1-7-4-1 3-4 5-7 5H3l6 4-2 6 5-4 5 4-2-6 6-5z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_peace_title">
+          Paix – Réconciliation – Cohésion nationale
+        </h3>
+        <p data-i18n="axis_peace_text">
+          Ramener la paix dans les régions en conflit, réconcilier la Nation,
+          restaurer la confiance citoyenne.
+        </p>
+      </article>
+
+      <!-- Tuile 3 -->
+      <article class="tile tile--sky">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Colonnes (institutions) -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M3 9h18l-9-6-9 6zm1 2h2v8H4v-8zm5 0h2v8H9v-8zm5 0h2v8h-2v-8zm5 0h2v8h-2v-8z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_reforms_title">
+          Réformes politiques et institutionnelles
+        </h3>
+        <p data-i18n="axis_reforms_text">
+          Nouvelle Constitution, code électoral à deux tours, État de droit et
+          bonne gouvernance.
+        </p>
+      </article>
+
+      <!-- Tuile 4 -->
+      <article class="tile tile--sky">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Graphique -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M3 17h18v2H3v-2zm2-2h3v2H5v-2zm5-4h3v6h-3v-6zm5-3h3v9h-3V8z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_growth_title">
+          Croissance économique et développement durable
+        </h3>
+        <p data-i18n="axis_growth_text">
+          Rompre avec l’extraversion et poser les bases d’une économie
+          industrielle et numérique.
+        </p>
+      </article>
+
+      <!-- Tuile 5 -->
+      <article class="tile tile--sky">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Groupe (humain) -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M12 12a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-6 7v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1H6z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_human_title">
+          Développement du capital humain & solidarité sociale
+        </h3>
+        <p data-i18n="axis_human_text">
+          Réforme éducative, santé universelle, lutte contre le chômage des
+          jeunes, égalité des chances.
+        </p>
+      </article>
+
+      <!-- Tuile 6 -->
+      <article class="tile tile--sky">
+        <div class="tile__icon" aria-hidden="true">
+          <!-- Globe -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path
+              d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2zm0 18a8 8 0 0 1 0-16v16z"
+            />
+          </svg>
+        </div>
+        <h3 data-i18n="axis_world_title">
+          Rayonnement panafricain et international
+        </h3>
+        <p data-i18n="axis_world_text">
+          Positionner le Cameroun comme acteur clé en Afrique et dans un monde
+          multipolaire.
+        </p>
+      </article>
+    </div>
+
+    <!-- Grandes étapes de la Refondation (3–5 ans) -->
+    <section class="section section--alt" id="grandes-etapes">
+      <div class="container">
+        <h2 class="section__title" data-i18n="steps_title">
+          Les grandes étapes de la Refondation du Cameroun (3–5 ans)
+        </h2>
+
+        <ol class="steps">
+          <!-- ÉTAPE 1 -->
+          <li class="step card">
+            <div class="step__head">
+              <span class="step__num">1</span>
+              <h3 class="step__title" data-i18n="step1_title">
+                Mettre en place les organes de Transition
+              </h3>
+            </div>
+
+            <ul class="step__list">
+              <li class="step__item">
+                <span class="step__ico step__ico--circle">
+                  <!-- icône “président” -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4 0-6 2-6 4v2h12v-2c0-2-2-4-6-4Z"
+                    />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step1_president_title"
+                    >Président de Transition</strong
+                  >
+                  <p class="muted" data-i18n="step1_president_text">
+                    Mandat unique et limité, symbole de la Refondation.
+                  </p>
+                </div>
+              </li>
+
+              <li class="step__item">
+                <span class="step__ico step__ico--circle">
+                  <!-- icône “gouvernement” -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 10h16v2H4Zm1 4h14v6H5Zm7-12 7 6H5Z" />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step1_gov_title"
+                    >Gouvernement d’Union Nationale de Transition</strong
+                  >
+                  <p class="muted" data-i18n="step1_gov_text">
+                    Technocrates issus de toutes les forces vives, chargés de
+                    mettre en œuvre le programme et d’organiser les élections.
+                  </p>
+                </div>
+              </li>
+
+              <li class="step__item">
+                <span class="step__ico step__ico--circle">
+                  <!-- icône “assemblée” -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 10h18l-9-6-9 6Zm2 2h14v7H5Z" />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step1_assembly_title"
+                    >Assemblée nationale de Transition</strong
+                  >
+                  <p class="muted" data-i18n="step1_assembly_text">
+                    Légifère et contrôle l’action du gouvernement.
+                  </p>
+                </div>
+              </li>
+
+              <li class="step__item">
+                <span class="step__ico step__ico--circle">
+                  <!-- icône “cour constitutionnelle” -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 10h16v2H4Zm0 4h16v2H4Zm0 4h16v2H4Z" />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step1_court_title"
+                    >Cour constitutionnelle</strong
+                  >
+                  <p class="muted" data-i18n="step1_court_text">
+                    Veille à la constitutionnalité des actes durant la
+                    Transition.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ÉTAPE 2 -->
+          <li class="step card">
+            <div class="step__head">
+              <span class="step__num">2</span>
+              <h3 class="step__title" data-i18n="step2_title">
+                Redonner la parole et le pouvoir au Peuple
+              </h3>
+            </div>
+
+            <ul class="step__list">
+              <li class="step__item">
+                <span class="step__ico step__ico--circle step__ico--yellow">
+                  <!-- mains -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 11V4h2v7h1V6h2v5h1V7h2v4h2v6H5v-6Z" />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step2_assises_title"
+                    >Assises Nationales de Refondation</strong
+                  >
+                  <p class="muted" data-i18n="step2_assises_text">
+                    Consultations locales et régionales pour établir les valeurs
+                    du vivre-ensemble et définir le cahier des charges du
+                    gouvernement.
+                  </p>
+                </div>
+              </li>
+
+              <li class="step__item">
+                <span class="step__ico step__ico--circle step__ico--yellow">
+                  <!-- rouages -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 8a4 4 0 1 1-4 4 4 4 0 0 1 4-4Zm8 4-2 1 .2 2.3-2 .9-1.3 1.9-2.2-.5-2.2.5-1.3-1.9-2-.9.2-2.3-2-1 1-2 2.3.3 1.6-1.7 1.8 1 1.8-1 1.6 1.7 2.3-.3Z"
+                    />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step2_etats_title"
+                    >États Généraux Sectoriels</strong
+                  >
+                  <p class="muted" data-i18n="step2_etats_text">
+                    Analyse des enjeux sectoriels et propositions de solutions
+                    techniques et sociales.
+                  </p>
+                </div>
+              </li>
+
+              <li class="step__item">
+                <span class="step__ico step__ico--circle step__ico--yellow">
+                  <!-- urne -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 9h16v10H4Zm3-4h10v3H7Zm2 5h6v2H9Z" />
+                  </svg>
+                </span>
+                <div class="step__body">
+                  <strong data-i18n="step2_votes_title"
+                    >Référendum et élections générales</strong
+                  >
+                  <p class="muted" data-i18n="step2_votes_text">
+                    Adoption de la nouvelle Constitution et des codes, puis
+                    retour à la pleine légitimité démocratique.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Navigation de page -->
+    <section class="section">
+      <div class="container hero__cta">
+        <a href="index.html" class="btn btn--outline" data-i18n="back_home"
+          >← Retour à l’accueil</a
+        >
+        <a href="documents.html" class="btn btn--primary" data-i18n="see_docs"
+          >Voir les documents →</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--clean">
+      <div class="container footer__wrap">
+        <img src="assets/img/logo.png" alt="UPC 2025" class="footer__logo" />
+
+        <div class="footer__titleline">
+          <span class="footer__line"></span>
+          <h3 class="footer__title" data-i18n="footer_join">REJOIGNEZ-NOUS</h3>
+          <span class="footer__line"></span>
+        </div>
+
+        <ul class="footer__socials">
+          <li>
+            <a class="sbtn" href="#" aria-label="Facebook" title="Facebook"
+              ><span aria-hidden="true">f</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="X / Twitter" title="X"
+              ><span aria-hidden="true">X</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="Instagram" title="Instagram"
+              ><span aria-hidden="true">◎</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="YouTube" title="YouTube"
+              ><span aria-hidden="true">▶</span></a
+            >
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="documents-officiels.html" data-i18n="nav_docs">Documents</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+
+        <small class="footer__copy">
+          © <span id="year"></span> UPC 2025 —
+          <span data-i18n="rights">Tous droits réservés.</span>
+        </small>
+      </div>
+    </footer>
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
+  </body>
+</html>

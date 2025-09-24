@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>UPC 2025 — Union Pour le Changement</title>
+    <meta
+      name="description"
+      content="Coalition citoyenne pour l'alternance pacifique au Cameroun en 2025. Mobilisation, documents officiels, adhésion."
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <meta property="og:title" content="UPC 2025 — Union Pour le Changement" />
+    <meta
+      property="og:description"
+      content="Mobilisons-nous pour 2025 : adhérer, créer un comité, télécharger le programme."
+    />
+    <meta property="og:image" content="assets/img/hero-1.jpg" />
+    <meta name="theme-color" content="#007A5E" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container">
+        <span class="topbar__msg" data-i18n="topbar_msg"
+          >Élection présidentielle — Octobre 2025</span
+        >
+        <div class="topbar__actions">
+          <button
+            id="langToggle"
+            class="btn btn--ghost"
+            aria-label="Toggle language"
+          >
+            FR / EN
+          </button>
+          <a class="btn btn--ghost" href="contact.html" data-i18n="contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" alt="UPC 2025" class="brand__logo" />
+          <span class="brand__title">UPC 2025</span>
+        </a>
+
+        <nav id="nav" class="nav" aria-label="Navigation principale">
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <!-- AJOUTER juste après "À propos" (ordre au choix) -->
+          <a href="candidat.html" data-i18n="nav_candidate"
+            >Candidat consensuel</a
+          >
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="adherer.html" class="nav__cta" data-i18n="nav_join"
+            >Adherer</a
+          >
+          <a href="documents.html" data-i18n="nav_docs">Documents officiels</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne populaire</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+        </nav>
+
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-meeting">
+      <div class="hero__content container">
+        <h1 class="hero__title" data-i18n="hero_title">
+          Union Pour le Changement — 2025
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero_subtitle">
+          Mobiliser. Fédérer. Gagner.
+        </p>
+        <div class="hero__cta">
+          <a href="adherer.html" class="btn btn--primary" data-i18n="cta_join">
+            Adhérer maintenant
+          </a>
+          <a
+            href="documents.html"
+            class="btn btn--outline"
+            data-i18n="cta_program"
+          >
+            Télécharger le programme
+          </a>
+          <a
+            href="candidat.html"
+            class="btn btn--secondary"
+            data-i18n="cta_candidate"
+          >
+            Découvrir le candidat
+          </a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <!-- Vidéo du meeting -->
+        <video id="meetingVideo" class="hero__video" muted autoplay playsinline>
+          <source src="assets/img/video.MP4" type="video/mp4" />
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+
+        <!-- Bouton volume -->
+        <button
+          id="volumeToggle"
+          class="btn btn--volume"
+          aria-label="Toggle sound"
+        >
+          <span id="iconMute" class="icon">🔇</span>
+          <span id="iconSound" class="icon hidden">🔊</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Mise en avant du candidat consensuel -->
+    <section class="section">
+      <div class="container grid-2">
+        <!-- Card candidat -->
+        <article class="card candidat-card">
+          <img
+            src="assets/img/candidat.png"
+            alt="Candidat consensuel"
+            class="candidat__img"
+          />
+          <div class="candidat__content">
+            <h2 data-i18n="candidat_title">Le Candidat Consensuel</h2>
+            <p data-i18n="candidat_intro">
+              Découvrez la vision, le parcours et l'engagement du candidat
+              consensuel choisi par le peuple.
+            </p>
+            <a
+              href="candidat.html"
+              class="btn btn--primary"
+              data-i18n="btn_read_more"
+            >
+              En savoir plus →
+            </a>
+          </div>
+        </article>
+        <div class="card gradient-cm">
+          <h3 data-i18n="candidate_values_title">Vision & engagements</h3>
+          <p data-i18n="candidate_values_text">
+            Paix, réformes démocratiques, croissance inclusive, développement
+            humain et rayonnement international du Cameroun.
+          </p>
+          <a
+            href="programme.html"
+            class="btn btn--secondary"
+            data-i18n="cta_read_program"
+          >
+            Lire le programme
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programme / Axes en 2 colonnes -->
+    <section class="section" id="programme">
+      <div class="container">
+        <div class="program__grid">
+          <!-- Colonne gauche : présentation UPC 2025 -->
+          <article class="card gradient-cm">
+            <h2 data-i18n="doc_program">UPC 2025 — Programme Commun</h2>
+            <p data-i18n="about_text">
+              Large coalition citoyenne et politique engagée pour l’alternance
+              pacifique en 2025.
+            </p>
+
+            <ul class="checklist">
+              <li data-i18n="about_point_1">
+                Fédérer les forces du changement
+              </li>
+              <li data-i18n="about_point_2">
+                Présenter un candidat consensuel
+              </li>
+              <li data-i18n="about_point_3">Surveiller et défendre le vote</li>
+            </ul>
+
+            <div class="hero__cta" style="justify-content: flex-start">
+              <a
+                href="adherer.html"
+                class="btn btn--secondary"
+                data-i18n="nav_join"
+                >Adhérer</a
+              >
+              <a
+                href="documents-officiels.html"
+                class="btn btn--outline"
+                data-i18n="cta_program"
+                >Télécharger le programme</a
+              >
+            </div>
+          </article>
+
+          <!-- Colonne droite : 5 axes -->
+          <div class="axis-list">
+            <article class="axis-item">
+              <h3>
+                <span class="axis-dot axis--green"></span>
+                <span data-i18n="axis_1_title">Paix & Cohésion</span>
+              </h3>
+              <p data-i18n="axis_1_text">
+                Réconciliation nationale et stabilité durable.
+              </p>
+            </article>
+
+            <article class="axis-item">
+              <h3>
+                <span class="axis-dot axis--yellow"></span>
+                <span data-i18n="axis_2_title">Réformes politiques</span>
+              </h3>
+              <p data-i18n="axis_2_text">
+                Institutions solides, État de droit, justice indépendante.
+              </p>
+            </article>
+
+            <article class="axis-item">
+              <h3>
+                <span class="axis-dot axis--red"></span>
+                <span data-i18n="axis_3_title">Croissance économique</span>
+              </h3>
+              <p data-i18n="axis_3_text">
+                Emplois, entrepreneuriat, infrastructures.
+              </p>
+            </article>
+
+            <article class="axis-item">
+              <h3>
+                <span class="axis-dot axis--green"></span>
+                <span data-i18n="axis_4_title">Développement humain</span>
+              </h3>
+              <p data-i18n="axis_4_text">
+                Éducation, santé, protection sociale.
+              </p>
+            </article>
+
+            <article class="axis-item">
+              <h3>
+                <span class="axis-dot axis--yellow"></span>
+                <span data-i18n="axis_5_title">Rayonnement international</span>
+              </h3>
+              <p data-i18n="axis_5_text">
+                Diplomatie active et intégration régionale.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Appel à l’action -->
+    <section class="section section--alt">
+      <div class="container grid-2">
+        <!-- Colonne gauche : Texte et appel -->
+        <div class="cta__text">
+          <h2 data-i18n="call_action">Agir près de chez vous</h2>
+          <p data-i18n="call_action_text">
+            Rejoignez un comité existant ou créez le vôtre pour mobiliser autour
+            de l’alternance pacifique en 2025.
+          </p>
+          <div class="hero__cta">
+            <a
+              href="adherer.html#join_committee"
+              class="btn btn--primary"
+              data-i18n="cta_join"
+              >Adhérer maintenant</a
+            >
+            <a
+              href="adherer.html#create_committee"
+              class="btn btn--secondary"
+              data-i18n="cta_create_committee"
+              >Créer un comité</a
+            >
+          </div>
+        </div>
+
+        <!-- Colonne droite : Illustration -->
+        <div class="cta__image">
+          <img
+            src="assets/img/logo.png"
+            alt="Comités de soutien UPC 2025"
+            class="cta__illustration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--clean">
+      <div class="container footer__wrap">
+        <img src="assets/img/logo.png" alt="UPC 2025" class="footer__logo" />
+
+        <div class="footer__titleline">
+          <span class="footer__line"></span>
+          <h3 class="footer__title" data-i18n="footer_join">REJOIGNEZ-NOUS</h3>
+          <span class="footer__line"></span>
+        </div>
+
+        <ul class="footer__socials">
+          <li>
+            <a class="sbtn" href="#" aria-label="Facebook" title="Facebook"
+              ><span aria-hidden="true">f</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="X / Twitter" title="X"
+              ><span aria-hidden="true">X</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="Instagram" title="Instagram"
+              ><span aria-hidden="true">◎</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="YouTube" title="YouTube"
+              ><span aria-hidden="true">▶</span></a
+            >
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="documents-officiels.html" data-i18n="nav_docs">Documents</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+
+        <small class="footer__copy">
+          © <span id="year"></span> UPC 2025 —
+          <span data-i18n="rights">Tous droits réservés.</span>
+        </small>
+      </div>
+    </footer>
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title data-i18n="candidate_meta_title">
+      Candidat consensuel — UPC 2025
+    </title>
+    <meta
+      name="description"
+      content="Présentation du candidat consensuel, vision et engagements UPC 2025."
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container">
+        <span class="topbar__msg" data-i18n="topbar_msg"
+          >Élection présidentielle — Octobre 2025</span
+        >
+        <div class="topbar__actions">
+          <button
+            id="langToggle"
+            class="btn btn--ghost"
+            aria-label="Toggle language"
+          >
+            FR / EN
+          </button>
+          <a class="btn btn--ghost" href="contact.html" data-i18n="contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" alt="UPC 2025" class="brand__logo" />
+          <span class="brand__title">UPC 2025</span>
+        </a>
+
+        <nav id="nav" class="nav" aria-label="Navigation principale">
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <!-- AJOUTER juste après "À propos" (ordre au choix) -->
+          <a href="candidat.html" data-i18n="nav_candidate"
+            >Candidat consensuel</a
+          >
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="adherer.html" class="nav__cta" data-i18n="nav_join"
+            >Adhérer</a
+          >
+          <a href="documents.html" data-i18n="nav_docs">Documents officiels</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne populaire</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+        </nav>
+
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: clamp(220px, 42vh, 520px)">
+      <div class="hero__content container">
+        <h1 class="hero__title" data-i18n="candidate_title">
+          Candidat consensuel
+        </h1>
+        <p class="hero__subtitle" data-i18n="candidate_subtitle">
+          Un leadership de transition pour refonder le Cameroun.
+        </p>
+        <div class="hero__cta">
+          <a
+            href="adherer.html#adhesion"
+            class="btn btn--primary"
+            data-i18n="cta_join_short"
+            >Adhérer</a
+          >
+          <a
+            href="documents.html#oath"
+            class="btn btn--outline"
+            data-i18n="candidate_read_oath"
+            >Lire le serment</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Présentation du candidat consensuel -->
+      <!-- Présentation du candidat consensuel -->
+      <section class="section">
+        <div class="container grid-2" style="align-items: start">
+          <!-- Colonne texte -->
+          <article class="card">
+            <h2 data-i18n="candidate_who_title">Notre candidat du peuple</h2>
+            <p data-i18n="candidate_who_text">
+              Investi pour l’élection présidentielle d’octobre 2025 par l’Union
+              pour le Changement au Cameroun (UPC 2025), le candidat consensuel
+              du peuple répond à l’appel des Camerounais pour la mutualisation
+              des forces au sein d’une large coalition autour d’un
+              <strong>Programme Commun de Transition et de Refondation</strong>.
+            </p>
+            <ul class="checklist">
+              <li data-i18n="candidate_value_1">
+                S’élever au-dessus des intérêts égoïstes personnels et
+                partisans.
+              </li>
+              <li data-i18n="candidate_value_2">
+                Mener la campagne comme chef d’une équipe collégiale faite de
+                tous les membres de l’UPC 2025.
+              </li>
+              <li data-i18n="candidate_value_3">
+                Donner la parole au peuple en convoquant des Assises Nationales
+                et des États Généraux socio-professionnels.
+              </li>
+              <li data-i18n="candidate_value_4">
+                Former un
+                <strong
+                  >Gouvernement d’Union Nationale de Transition et de
+                  Refondation</strong
+                >.
+              </li>
+              <li data-i18n="candidate_value_5">
+                Organiser des élections générales à l’issue de la transition et
+                <strong>ne pas se représenter à la présidentielle</strong>.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Colonne image + vision -->
+          <aside class="card gradient-cm" style="text-align: center">
+            <img
+              src="assets/img/candidat.png"
+              alt="Candidat consensuel UPC 2025"
+              class="candidate-img"
+              loading="lazy"
+            />
+            <h2 data-i18n="candidate_vision_title">Vision</h2>
+            <p data-i18n="candidate_vision_text">
+              Conduire une transition apaisée, réformer les institutions,
+              relancer l’économie et protéger le vote, afin de refonder
+              durablement le Cameroun.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="cta_program"
+            >
+              Télécharger le programme →
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Engagements clés -->
+      <section class="section section--alt">
+        <div class="container cards pillars">
+          <article class="card pillar">
+            <!-- Icône Paix -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.93V13h4.93A8.001 8.001 0 0113 19.93zM11 19.93A8.001 8.001 0 016.07 13H11v6.93zM19.93 11H13V4.07A8.001 8.001 0 0119.93 11zM11 4.07V11H4.07A8.001 8.001 0 0111 4.07z"
+              />
+            </svg>
+            <h3 data-i18n="candidate_pillar_1">Paix & sécurité</h3>
+            <p data-i18n="candidate_pillar_1_desc">
+              Mesures immédiates pour l’apaisement et la sécurité des citoyens.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+
+          <article class="card pillar">
+            <!-- Icône Réformes -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path d="M3 4h18v2H3V4zm0 14h18v2H3v-2zM5 8h14v8H5V8z" />
+            </svg>
+            <h3 data-i18n="candidate_pillar_2">Réformes politiques</h3>
+            <p data-i18n="candidate_pillar_2_desc">
+              Institutions crédibles, justice indépendante, cadre électoral
+              fiable.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+
+          <article class="card pillar">
+            <!-- Icône Économie -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M3 17h2v4H3v-4zm4-6h2v10H7V11zm4 3h2v7h-2v-7zm4-5h2v12h-2V9zm4-6h2v18h-2V3z"
+              />
+            </svg>
+            <h3 data-i18n="candidate_pillar_3">Croissance économique</h3>
+            <p data-i18n="candidate_pillar_3_desc">
+              Relance, emploi des jeunes, soutien aux PME & territoires.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+
+          <article class="card pillar">
+            <!-- Icône Développement humain -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4s-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            <h3 data-i18n="candidate_pillar_4">Développement humain</h3>
+            <p data-i18n="candidate_pillar_4_desc">
+              Éducation, santé, protection sociale, égalité des chances.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+
+          <article class="card pillar">
+            <!-- Icône International -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 
+        10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 
+        0-.62.08-1.21.21-1.79L11 15v4.93zm6.9-2.54A7.93 7.93 0 0020 12c0-.62-.08-1.21-.21-1.79L13 15v4.93a7.931 7.931 0 004.9-2.54z"
+              />
+            </svg>
+            <h3 data-i18n="candidate_pillar_5">Rayonnement international</h3>
+            <p data-i18n="candidate_pillar_5_desc">
+              Diplomatie proactive & intégration régionale.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+
+          <article class="card pillar">
+            <!-- Icône Éthique -->
+            <svg
+              class="pillar__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2L1.5 9l1.5 2L12 6l9 5 1.5-2L12 2zm0 7l-9 5 9 5 9-5-9-5zm-9 7v2l9 5 9-5v-2l-9 5-9-5z"
+              />
+            </svg>
+            <h3 data-i18n="candidate_pillar_6">Éthique publique</h3>
+            <p data-i18n="candidate_pillar_6_desc">
+              Lutte contre la corruption & gestion exemplaire.
+            </p>
+            <a
+              href="programme.html"
+              class="btn btn--outline"
+              data-i18n="btn_learn_more"
+              >En savoir plus →</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- Documents / Preuves d’engagement -->
+      <section class="section">
+        <div class="container grid-2">
+          <div class="card">
+            <h2 data-i18n="candidate_docs_title">Documents d’engagement</h2>
+            <ul class="checklist">
+              <li>
+                <a
+                  href="assets/docs/UPC_2025_Oath_Candidat.pdf"
+                  target="_blank"
+                  data-i18n="candidate_doc_oath"
+                  >Serment du candidat (PDF)</a
+                >
+              </li>
+              <li>
+                <a href="documents.html" data-i18n="candidate_doc_commitment"
+                  >Engagements & textes officiels</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 data-i18n="candidate_cta_title">Agir maintenant</h2>
+            <p data-i18n="candidate_cta_text">
+              Rejoignez la campagne : adhésion individuelle ou création d’un
+              comité.
+            </p>
+            <div class="hero__cta" style="justify-content: flex-start">
+              <a
+                href="participez.html#adhesion"
+                class="btn btn--primary"
+                data-i18n="cta_join_short"
+                >Adhérer</a
+              >
+              <a
+                href="campagne-populaire.html#comite"
+                class="btn btn--outline"
+                data-i18n="cta_create_committee"
+                >Créer un comité</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section navigation (Accueil / Programme) -->
+    <section class="section section--inset">
+      <div class="container hero__cta nav-cta">
+        <a href="index.html" class="btn btn--outline" data-i18n="back_home">
+          ← Retour à l’accueil
+        </a>
+        <a
+          href="programme.html"
+          class="btn btn--primary"
+          data-i18n="cta_program"
+        >
+          Voir le programme →
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--clean">
+      <div class="container footer__wrap">
+        <img src="assets/img/logo.png" alt="UPC 2025" class="footer__logo" />
+
+        <div class="footer__titleline">
+          <span class="footer__line"></span>
+          <h3 class="footer__title" data-i18n="footer_join">REJOIGNEZ-NOUS</h3>
+          <span class="footer__line"></span>
+        </div>
+
+        <ul class="footer__socials">
+          <li>
+            <a class="sbtn" href="#" aria-label="Facebook" title="Facebook"
+              ><span aria-hidden="true">f</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="X / Twitter" title="X"
+              ><span aria-hidden="true">X</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="Instagram" title="Instagram"
+              ><span aria-hidden="true">◎</span></a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="YouTube" title="YouTube"
+              ><span aria-hidden="true">▶</span></a
+            >
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="documents-officiels.html" data-i18n="nav_docs">Documents</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+
+        <small class="footer__copy">
+          © <span id="year"></span> UPC 2025 —
+          <span data-i18n="rights">Tous droits réservés.</span>
+        </small>
+      </div>
+    </footer>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
+  </body>
+</html>

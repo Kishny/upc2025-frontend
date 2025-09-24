@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title data-i18n="join_title_tab">Participez — UPC 2025</title>
+    <meta
+      name="description"
+      content="Rejoignez la campagne : bénévolat, dons, comités de soutien. Inscrivez-vous à la newsletter pour recevoir les mises à jour."
+      data-i18n="join_meta_desc"
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <meta property="og:title" content="Participez — UPC 2025" />
+    <meta
+      property="og:description"
+      content="Bénévolat, dons, comités de soutien et newsletter."
+    />
+    <meta name="theme-color" content="#007A5E" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container">
+        <span class="topbar__msg" data-i18n="topbar_msg"
+          >Élection présidentielle — Octobre 2025</span
+        >
+        <div class="topbar__actions">
+          <button
+            id="langToggle"
+            class="btn btn--ghost"
+            aria-label="Toggle language"
+          >
+            FR / EN
+          </button>
+          <a class="btn btn--ghost" href="contact.html" data-i18n="contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" alt="UPC 2025" class="brand__logo" />
+          <span class="brand__title">UPC 2025</span>
+        </a>
+        <nav id="nav" class="nav" aria-label="Navigation principale">
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="candidat.html" data-i18n="nav_candidate"
+            >Candidat consensuel</a
+          >
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="adherer.html" class="active nav__cta" data-i18n="nav_join"
+            >Adhérer</a
+          >
+          <a href="documents.html" data-i18n="nav_docs">Documents officiels</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne populaire</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+        </nav>
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="join_title_page">Participez à la campagne</h1>
+        <p class="page-hero__lead" data-i18n="join_lead">
+          Devenez bénévole, soutenez financièrement, rejoignez ou créez un
+          comité. Inscrivez-vous aussi à la newsletter.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section adhésion -->
+    <section class="section section--adhesion">
+      <div class="container grid-2">
+        <!-- Colonne gauche : descriptif -->
+        <div class="adhesion__text">
+          <h2 data-i18n="join_subtitle">Adhérer à la coalition</h2>
+          <p data-i18n="join_intro">
+            L’Union pour le Changement en 2025 est avant tout une initiative du
+            Peuple camerounais. Chaque citoyen peut adhérer à titre personnel.
+            Les partis politiques et associations de la société civile peuvent
+            également adhérer en tant qu’organisation.
+          </p>
+          <ul>
+            <li data-i18n="join_point1">
+              Promouvoir le Programme Commun de Transition et de Refondation
+            </li>
+            <li data-i18n="join_point2">
+              Participer activement à la campagne électorale du Candidat
+              CONSENSUEL
+            </li>
+            <li data-i18n="join_point3">
+              Surveiller et défendre le vote dès le 12 octobre 2025
+            </li>
+            <li data-i18n="join_point4">
+              Contribuer après la victoire à la mise en œuvre du Programme
+              Commun
+            </li>
+          </ul>
+        </div>
+
+        <!-- Colonne droite : formulaire -->
+        <div class="adhesion__form-wrapper">
+          <!-- Choix type membre -->
+          <div class="adhesion__options" id="member-options">
+            <input
+              type="radio"
+              id="member-individual"
+              name="member_type"
+              value="individual"
+              checked
+            />
+            <label
+              for="member-individual"
+              class="toggle-btn"
+              data-i18n="opt_individual"
+              >Individuel</label
+            >
+
+            <input
+              type="radio"
+              id="member-organization"
+              name="member_type"
+              value="organization"
+            />
+            <label
+              for="member-organization"
+              class="toggle-btn"
+              data-i18n="opt_organization"
+              >Organisation</label
+            >
+
+            <div class="toggle-slider slider-member"></div>
+          </div>
+
+          <!-- Choix mode inscription -->
+          <div class="adhesion__options" id="mode-options">
+            <input
+              type="radio"
+              id="mode-online"
+              name="inscription_mode"
+              value="online"
+              checked
+            />
+            <label for="mode-online" class="toggle-btn" data-i18n="opt_online"
+              >En ligne</label
+            >
+
+            <input
+              type="radio"
+              id="mode-paper"
+              name="inscription_mode"
+              value="paper"
+            />
+            <label for="mode-paper" class="toggle-btn" data-i18n="opt_paper"
+              >Fiche papier</label
+            >
+
+            <div class="toggle-slider slider-mode"></div>
+          </div>
+
+          <!-- Formulaire -->
+          <form id="form-adhesion" class="form-individual card" novalidate>
+            <h3 data-i18n="join_form_title">Formulaire d'inscription</h3>
+
+            <div class="form-row">
+              <label>
+                <span data-i18n="field_name">Nom & Prénoms</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span data-i18n="field_email">Email</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="field_phone">Téléphone / WhatsApp</span>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+237 6xx xxx xxx"
+                required
+              />
+            </label>
+
+            <div class="form-row org-only" style="display: none">
+              <label>
+                <span data-i18n="field_org_name">Nom de l'organisation</span>
+                <input type="text" name="org_name" />
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="field_region">Région</span>
+              <select name="region" required>
+                <option value="" selected disabled data-i18n="select_region">
+                  — Sélectionner —
+                </option>
+                <option>Adamaoua</option>
+                <option>Centre</option>
+                <option>Est</option>
+                <option>Extrême-Nord</option>
+                <option>Littoral</option>
+                <option>Nord</option>
+                <option>Nord-Ouest</option>
+                <option>Ouest</option>
+                <option>Sud</option>
+                <option>Sud-Ouest</option>
+                <option>Diaspora</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="field_role">Comment contribuer ?</span>
+              <select name="role" required>
+                <option value="" selected disabled data-i18n="select_role">
+                  — Choisir —
+                </option>
+                <option data-i18n="opt_mobilize">Mobilisation</option>
+                <option data-i18n="opt_comms">Communication</option>
+                <option data-i18n="opt_vote">Contrôle du vote</option>
+                <option data-i18n="opt_donor">Donateur</option>
+                <option data-i18n="opt_influencer">Influence</option>
+              </select>
+            </label>
+
+            <div class="form__alert" hidden></div>
+
+            <div class="hero__cta">
+              <button
+                class="btn btn--primary"
+                type="submit"
+                data-i18n="btn_send"
+              >
+                Envoyer
+              </button>
+              <a
+                href="#"
+                class="btn btn--outline"
+                id="download-form"
+                style="display: none"
+                data-i18n="btn_download_cert"
+              >
+                Télécharger mon certificat
+              </a>
+            </div>
+
+            <!-- ✅ Zone pour les boutons de partage -->
+            <div
+              id="share-buttons"
+              style="margin-top: 15px; display: none"
+            ></div>
+
+            <small class="form__small" data-i18n="privacy_note">
+              En envoyant, vous acceptez notre politique de confidentialité.
+            </small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--clean">
+      <div class="container footer__wrap">
+        <img src="assets/img/logo.png" alt="UPC 2025" class="footer__logo" />
+        <div class="footer__titleline">
+          <span class="footer__line"></span>
+          <h3 class="footer__title" data-i18n="footer_join">REJOIGNEZ-NOUS</h3>
+          <span class="footer__line"></span>
+        </div>
+        <ul class="footer__socials">
+          <li>
+            <a class="sbtn" href="#" aria-label="Facebook" title="Facebook"
+              >f</a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="X / Twitter" title="X">X</a>
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="Instagram" title="Instagram"
+              >◎</a
+            >
+          </li>
+          <li>
+            <a class="sbtn" href="#" aria-label="YouTube" title="YouTube">▶</a>
+          </li>
+        </ul>
+        <nav class="footer__nav">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="a-propos.html" data-i18n="nav_about">À propos</a>
+          <a href="programme.html" data-i18n="nav_program">Programme</a>
+          <a href="documents.html" data-i18n="nav_docs">Documents</a>
+          <a href="campagne-populaire.html" data-i18n="nav_campaign"
+            >Campagne</a
+          >
+          <a href="actualites-medias.html" data-i18n="nav_news_media"
+            >Actualités / Médias</a
+          >
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+        <small class="footer__copy">
+          © <span id="year"></span> UPC 2025 —
+          <span data-i18n="rights">Tous droits réservés.</span>
+        </small>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
+  </body>
+</html>
