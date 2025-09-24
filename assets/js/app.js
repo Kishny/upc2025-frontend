@@ -18,7 +18,7 @@ if (backendMeta) {
   BASE_URL = `http://${hostname}:4000`;
   console.log("📡 Mode LAN →", BASE_URL);
 } else {
-  BASE_URL = "https://upc2025-backend-f27ebdd406.herokuapp.com";
+  BASE_URL = "https://upc2025-backend-fa27ebdd4f06.herokuapp.com/";
   console.log("🚀 Mode PRODUCTION →", BASE_URL);
 }
 
