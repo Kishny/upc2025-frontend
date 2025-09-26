@@ -301,62 +301,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================
-     FORMULAIRE CONTACT
-  ========================= */
-  const contactForm = document.getElementById("form-contact");
-  if (contactForm) {
-    const alertBox = contactForm.querySelector(".form__alert");
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      let isValid = true;
-      contactForm.querySelectorAll("input, textarea").forEach((input) => {
-        if (input.required && !input.value.trim()) {
-          input.style.borderColor = "red";
-          isValid = false;
-        } else input.style.borderColor = "";
-      });
-
-      if (!isValid) {
-        alertBox.hidden = false;
-        alertBox.textContent = "Merci de remplir tous les champs obligatoires.";
-        alertBox.style.borderColor = "#CE1126";
-        return;
-      }
-
-      try {
-        const data = Object.fromEntries(new FormData(contactForm));
-        const result = await safeFetch(`${BASE_URL}/api/contact`, {
-          method: "POST",
-          body: JSON.stringify(data),
-        });
-
-        if (result.ok) {
-          alertBox.hidden = false;
-          alertBox.textContent = "Merci ! Votre message a été envoyé.";
-          alertBox.style.borderColor = "#007A5E";
-          contactForm.reset();
-        } else {
-          alertBox.hidden = false;
-          alertBox.textContent = `Erreur : ${result.error || "Serveur"}`;
-          alertBox.style.borderColor = "#CE1126";
-        }
-      } catch (err) {
-        console.error("❌ Erreur contact :", err);
-        alertBox.hidden = false;
-        alertBox.textContent =
-          "⚠️ Impossible de contacter le serveur (route /api/contact manquante ?)";
-        alertBox.style.borderColor = "#CE1126";
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Envoyer";
-      }
-    });
-  }
-
-  /* =========================
      COOKIES SITE
   ========================= */
   if (!localStorage.getItem("cookiesAccepted")) {
@@ -384,4 +328,98 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     document.body.appendChild(banner);
   }
+});
+
+/* =========================
+   NEWSLETTER
+========================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("newsletter-form");
+  const messageBox = document.getElementById("newsletter-message");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = form.email.value.trim();
+
+      if (!email) {
+        messageBox.textContent = "⚠️ Merci d’entrer un email.";
+        messageBox.style.color = "red";
+        return;
+      }
+
+      try {
+        const res = await fetch(`${BASE_URL}/api/newsletter`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await res.json();
+        if (data.ok) {
+          messageBox.textContent =
+            "✅ Merci, vous êtes inscrit à la newsletter.";
+          messageBox.style.color = "green";
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Erreur : " + data.error;
+          messageBox.style.color = "red";
+        }
+      } catch (err) {
+        console.error("Erreur newsletter :", err);
+        messageBox.textContent = "❌ Impossible de vous inscrire.";
+        messageBox.style.color = "red";
+      }
+    });
+  }
+});
+
+/* =========================
+   FORMULAIRE COMITÉ (i18n)
+========================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("form-committee");
+  const alertBox = form.querySelector(".form__alert");
+
+  // petite fonction de traduction
+  const lang = document.documentElement.lang || "fr";
+  const t = (key) => window.i18n?.[lang]?.[key] || key;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch("http://localhost:4000/api/committees", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const json = await res.json();
+
+      if (res.ok && json.ok) {
+        // ✅ Succès
+        alertBox.hidden = false;
+        alertBox.className = "form__alert success";
+        alertBox.innerHTML = `✅ ${t("committee_success")}`;
+
+        setTimeout(() => {
+          form.reset();
+          alertBox.hidden = true;
+        }, 2500);
+      } else {
+        // ❌ Erreur côté backend
+        alertBox.hidden = false;
+        alertBox.className = "form__alert error";
+        alertBox.innerHTML = `⚠️ ${t("committee_error")}`;
+      }
+    } catch (err) {
+      // ❌ Erreur réseau
+      alertBox.hidden = false;
+      alertBox.className = "form__alert error";
+      alertBox.innerHTML = `❌ ${t("committee_network_error")}`;
+    }
+  });
 });

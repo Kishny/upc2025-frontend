@@ -280,6 +280,22 @@
   "step2_votes_title": "Referendum and general elections",
   "step2_votes_text": "Adoption of new Constitution and codes, then return to full democratic legitimacy.",
   "see_docs": "View documents →", "back_home": "← Back to Home",
-"goto_campaign": "Popular Campaign →"
-
+"goto_campaign": "Popular Campaign →", 
+ "newsletter_title": "Stay Informed",
+  "newsletter_subtitle": "Subscribe to our newsletter to receive the latest updates.",
+  "newsletter_placeholder": "Your email",
+  "newsletter_button": "Subscribe", 
+  "committee_success": "Committee created successfully!",
+  "committee_error": "Failed to register the committee.",
+  "committee_network_error": "Network error: please check your connection.",
+  "email_contact_subject": "✅ Your message has been received - UPC 2025",
+  "email_contact_greeting": "Hello {name},",
+  "email_contact_intro": "Thank you for contacting <strong>UPC 2025</strong>. We have received your message and our team will get back to you shortly.",
+  "email_contact_details": "📌 Message details:",
+  "email_contact_name": "Name",
+  "email_contact_email": "Email",
+  "email_contact_phone": "Phone",
+  "email_contact_subject_label": "Subject",
+  "email_contact_message": "Message",
+  "email_contact_outro": "🙏 Thank you for your support.<br/>The <strong>UPC 2025</strong> team."
 }

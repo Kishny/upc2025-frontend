@@ -281,6 +281,23 @@
   "step2_votes_text": "Adoption de la nouvelle Constitution et des codes, puis retour à la pleine légitimité démocratique.",
   "see_docs": "Voir les documents →",
   "back_home": "← Retour à l’accueil",
-"goto_campaign": "Campagne Populaire →"
+"goto_campaign": "Campagne Populaire →",
+"newsletter_title": "Restez informés",
+  "newsletter_subtitle": "Abonnez-vous à notre newsletter pour recevoir nos dernières actualités.",
+  "newsletter_placeholder": "Votre email",
+  "newsletter_button": "S'abonner",
+ "committee_success": "Comité créé avec succès !",
+  "committee_error": "Impossible d’enregistrer le comité.",
+  "committee_network_error": "Erreur réseau : veuillez vérifier votre connexion.", 
+  "email_contact_subject": "✅ Votre message a bien été reçu - UPC 2025",
+  "email_contact_greeting": "Bonjour {name},",
+  "email_contact_intro": "Merci d’avoir pris contact avec <strong>UPC 2025</strong>. Nous avons bien reçu votre message et notre équipe vous répondra rapidement.",
+  "email_contact_details": "📌 Détails de votre message :",
+  "email_contact_name": "Nom",
+  "email_contact_email": "Email",
+  "email_contact_phone": "Téléphone",
+  "email_contact_subject_label": "Sujet",
+  "email_contact_message": "Message",
+  "email_contact_outro": "🙏 Merci pour votre engagement.<br/>L’équipe <strong>UPC 2025</strong>."
 
 }

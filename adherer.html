@@ -274,6 +274,54 @@
       </div>
     </section>
 
+    <!-- =========================
+     SECTION NEWSLETTER
+========================= -->
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__icon">
+          <!-- ✉️ Illustration SVG inline -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="4" width="44" height="32" rx="4" ry="4"></rect>
+            <polyline points="2,6 24,26 46,6"></polyline>
+          </svg>
+        </div>
+        <div class="newsletter__text">
+          <h2 data-i18n="newsletter_title">Restez informés</h2>
+          <p data-i18n="newsletter_subtitle">
+            Abonnez-vous à notre newsletter pour recevoir nos dernières
+            actualités.
+          </p>
+          <form id="newsletter-form" class="newsletter__form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Votre email"
+              data-i18n-placeholder="newsletter_placeholder"
+              required
+            />
+            <button
+              type="submit"
+              class="btn btn--primary"
+              data-i18n="newsletter_button"
+            >
+              S'abonner
+            </button>
+          </form>
+          <div id="newsletter-message" class="newsletter__message"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer footer--clean">
       <div class="container footer__wrap">
